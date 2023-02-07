@@ -12,12 +12,7 @@ interface actionType {
   task: string;
 }
 
-const TASKS: TaskInterface[] = [
-  {
-    task:"TASK 1111111111111111111111111111111111111111",
-    isDone:false
-  }
-];
+const TASKS: TaskInterface[] = [];
 
 type state = typeof TASKS;
 
