@@ -1,0 +1,133 @@
+body {
+  margin: 0px;
+  height: 100vh;
+  background: #f8f8ff;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 61px;
+  /* identical to box height */
+  text-align: center;
+  padding: 10px;
+
+  color: #525252;
+}
+
+.divDef {
+  margin: auto;
+  width: 800px;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.divDef select {
+  background-color: #b7b9c5;
+  border: none;
+
+  padding: 10px;
+
+  border-radius: 5px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #263032;
+}
+.divDef select:hover {
+  opacity: 0.9;
+}
+.taskContainer {
+  margin-top: 20px;
+  background: #ecedf6;
+  border-radius: 5px;
+  width: 800px;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-height: 600px;
+  overflow: scroll;
+
+  box-sizing: border-box;
+}
+
+.addBtn {
+  background: #646ff0;
+  border-radius: 5px;
+
+  padding: 10px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+
+  border: none;
+
+  color: #ffffff;
+}
+.addBtn:hover {
+  opacity: 0.9;
+}
+
+.inputContainer {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-wrap: nowrap;
+}
+
+.input {
+  width: 500px;
+  height: fit-content;
+  margin-right: 20px;
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  padding: 10px;
+
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 500px) {
+  .input {
+    width: 300px;
+    margin: 0;
+  }
+  .divDef select {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+  .inputContainer {
+    width: 300px;
+    flex-direction: column;
+  }
+
+  .taskContainer {
+    width: 300px;
+    padding: 0;
+  }
+
+  .divDef {
+    width: 300px;
+  }
+
+  .addBtn {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+}
